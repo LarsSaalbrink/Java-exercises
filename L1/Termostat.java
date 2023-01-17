@@ -19,4 +19,8 @@ public class Termostat{
     this.coolingtemperature = coolingtemperature;
     this.heatingtemperature = heatingtemperature;
   }
+
+  public double getTemperature(){
+    return this.coolingtemperature;
+  }
 }

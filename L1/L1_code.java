@@ -34,5 +34,10 @@ public class L1_code {
     Termostat klassevaerelse2 = new Termostat();
     klassevaerelse.setTemperatures(45,5);
     System.out.println("For varmt: " + klassevaerelse.timeToCool(40.0));
+
+    for(Termostat test = new Termostat(); test.timeToCool(40.0); test.setTemperatures((test.getTemperature()+1),5)){
+      System.out.println("Yee");
+    }
+
   }
 }
